@@ -1,4 +1,4 @@
-# RaspberryPi-FullStack-Upgrade-Project
+# Raspberry Pi Full Stack Upgrade Project
 
 This is the repository for Raspberry Pi Full Stack Upgrade Project, a course from [Tech Explorations](https://techexplorations.com).
 
