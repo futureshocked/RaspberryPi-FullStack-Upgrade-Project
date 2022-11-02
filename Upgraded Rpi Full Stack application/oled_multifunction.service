@@ -1,0 +1,16 @@
+[Unit]
+Description=OLED Multifunction Service
+After=syslog.target
+
+[Service]
+ExecStart=/var/www/lab_app/bin/python /var/www/lab_app/oled_multifunction_v2.py
+WorkingDirectory=/var/www/lab_app/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+

@@ -1,0 +1,15 @@
+[Unit]
+Description=CH12 Receiver Service
+After=syslog.target
+
+[Service]
+ExecStart=/var/www/lab_app/bin/python /var/www/lab_app/hc12_receiver.py
+WorkingDirectory=/var/www/lab_app/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+

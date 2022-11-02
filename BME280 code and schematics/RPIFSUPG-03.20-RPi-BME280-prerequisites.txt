@@ -1,0 +1,22 @@
+
+$ sudo adduser pi i2c
+$ sudo apt-get install i2c-tools python3-pip
+$ cd ~
+$ mkdir source
+$ cd source
+$ sudo apt install git
+$ git clone https://github.com/rm-hull/bme280.git
+$ cd bme280
+$ sudo python3 setup.py install
+$ python3 examples/sample.py
+
+$ pip3 install smbus2
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting smbus2
+  Downloading https://www.piwheels.org/simple/smbus2/smbus2-0.4.2-py2.py3-none-any.whl (13 kB)
+Installing collected packages: smbus2
+Successfully installed smbus2-0.4.2
+
+---> Instead of cloning the Github repository, you can install this module from PyPi:
+
+$ sudo pip3 install RPi.bme280

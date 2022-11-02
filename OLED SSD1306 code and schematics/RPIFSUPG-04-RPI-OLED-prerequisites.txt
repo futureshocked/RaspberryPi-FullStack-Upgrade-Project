@@ -1,0 +1,10 @@
+Use these Bash commands to install the prerequisites:
+
+$ sudo apt install libopenjp2-7-dev
+$ pip3 install adafruit-circuitpython-ssd1306
+$ pip3 install Pillow
+
+## These should already be installed:
+
+$ sudo apt install python3-pil
+$ sudo apt install python3-numpy
