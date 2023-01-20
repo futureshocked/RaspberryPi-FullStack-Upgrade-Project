@@ -109,7 +109,7 @@ def get_database_records(sensor_id):
        humidity = str(round(row[2],2))
 
     # Get the pressure
-    #sql = "SELECT * FROM pressures WHERE sensorID = " + str(sensor_id) + " ORDER BY rDatetime DESC LIMIT 1"
+    sql = "SELECT * FROM pressures WHERE sensorID = " + str(sensor_id) + " ORDER BY rDatetime DESC LIMIT 1"
     curs.execute(sql)
     row = curs.fetchone()
     if row is not None: 
